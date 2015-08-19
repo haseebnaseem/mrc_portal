@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="jumbotron">
+        <h3>
+            Welcome to MR consultants Portal 
+        </h3>
+        <p>
+            Please Log in to access the portal
+        </p>
+    </div>
+   <div class="form">
+  <%= form_for(:session, url: login_path) do |f| %> 
+  <%= f.email_field :email, :placeholder => "Email" %> 
+  <%= f.password_field :password, :placeholder => "Password" %> 
+  <%= f.submit "Log in", class: "btn-submit" %><p>If you are new user please </p><a href="/signup">signup</a>
+  <% end %>
+ </div>
+   
+</div>
