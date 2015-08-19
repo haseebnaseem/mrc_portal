@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'portal#hoe'
+  root 'portal#home'
   get '/signup' => 'users#new'
   resources :users 
   get '/login' => 'sessions#new'
